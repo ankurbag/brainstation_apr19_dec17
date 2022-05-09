@@ -1,0 +1,36 @@
+/* selector */
+
+/* element */
+
+* {
+    box-sizing: border-box;
+}
+/* id */
+#header, #footer {
+    background-color: #666;
+    width: 100%;
+    border: solid;
+}
+
+#nav {
+    background-color: rgb(158, 134, 134);
+    float: left;
+    height: 100vh;
+    width: 20%;
+    border: solid;
+}
+
+#article {
+    background-color: rgb(236, 5, 5);
+    float: left;
+    height: 100vh;
+    width: 80%;
+    border: solid;
+}
+
+
+#section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }

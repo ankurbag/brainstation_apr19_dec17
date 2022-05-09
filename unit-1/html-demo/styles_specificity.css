@@ -1,0 +1,44 @@
+* {
+    color: #666;
+  }
+  
+  #heading-important {
+    color: blue;
+  }
+  
+  h2 {
+    color: rgb(43, 41, 43);
+  }
+  
+  .heading-2 {
+    color: red;
+  }
+  
+  .heading-3 {
+    color: green;
+  }
+  
+  .heading-3.bunny {
+    color: lightgreen;
+  }
+  
+  .bunny,
+  .foxie {
+    background: rgb(238, 206, 238);
+  }
+  
+  ul {
+    font-size: 24px;
+  }
+
+  .parent {
+    margin-top: 25px;
+  }
+  
+  .child {
+    display: inline-block;
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+  }

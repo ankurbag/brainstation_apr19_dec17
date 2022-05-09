@@ -1,0 +1,88 @@
+* {
+  border: 1px dashed lightgrey;
+}
+
+/* root element */
+html {
+  font-size: 16px;
+}
+
+body {
+  /* margin: 0; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+ * Absolute Units 
+ * https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#Absolute_length_units
+ * CSS Reference Pixel: http://xahlee.info/js/web_design_screen_density.html
+ */
+.box-inches {
+  width: 1in;
+  height: 1in;
+  background: skyblue;
+}
+
+.box-pixels {
+  width: 96px;
+  height: 96px;
+  background: coral;
+  /* margin: 10px; */
+  /* border: 10px solid black; */
+}
+
+/* 
+ * Relative Units 
+ * https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#Relative_length_units
+ */
+.font-size-container {
+  font-size: 1.5em;
+}
+
+.font-em {
+  font-size: 1em;
+}
+
+.font-rem {
+  font-size: 1rem;
+}
+
+.px-to-rem-box {
+  /* target / base font = rem */
+  /* 300 / 16 = 18.75rem  */
+  width: 18.75rem;
+  height: 18.75rem;
+  background: forestgreen;
+}
+
+.box-percentage {
+  width: 50%;
+  background: skyblue;
+}
+
+.vw-box {
+  background: magenta;
+  width: 25vw;
+  height: 25vw;
+}
+
+.vh-box {
+  background: lightblue;
+  width: 50vh;
+}
+
+.vmin-box {
+  background: coral;
+  width: 50vmin;
+}
+
+.vmax-box {
+  background: coral;
+  width: 50vmax;
+}
+
+.vh-section {
+  height: 100vh;
+  background: url("https://picsum.photos/id/432/1920/1080");
+  background-size: cover;
+}

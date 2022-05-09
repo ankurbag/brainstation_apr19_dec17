@@ -1,0 +1,90 @@
+/*
+* Style File
+**/
+
+* {
+  box-sizing: border-box;
+}
+
+.header,
+.footer {
+  width: 100%;
+}
+
+.header {
+  height: 120px;
+  background-color: rgb(96, 121, 107);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.header h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.header h3 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-style: italic;
+}
+
+.footer {
+  height: 20px;
+  background-color: rgb(212, 248, 228);
+}
+
+.section {
+  float: left;
+  height: 100vh;
+  width: 50%;
+}
+
+.section hr{
+  color: rgb(96, 121, 107);
+  border-width: 2px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.left-section {
+  background-color: rgb(207, 204, 207);
+  overflow: auto;
+}
+
+.right-section {
+  background-color: rgb(243, 232, 232);
+  overflow: auto;
+}
+
+.sub-section {
+  margin: 0;
+  padding: 5px;
+}
+.sub-section > h1{
+    color: rgb(96, 121, 107);
+}
+
+.sub-section > h1,
+.info-box {
+  margin: 10px;
+  padding: 5px;
+}
+
+.info-box {
+}
+
+.info-box > h2,
+p, 
+ul{
+  margin: 4px;
+  font-size: 90%;
+}
+
+.italized-summary{
+  font-style: italic;
+}
+
+.bold{
+  font-weight: bold;
+}

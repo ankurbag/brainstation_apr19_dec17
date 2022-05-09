@@ -1,0 +1,77 @@
+/*
+* Style File
+**/
+
+/* Selector Styles*/
+*{
+    box-sizing: border-box;
+}
+/* Element */
+/*
+div {
+    border : solid;
+}
+*/
+
+/* Class */
+.header, .footer, .section, .main-body, .nav{
+    
+} 
+
+.header, .footer{
+    width : 100%;
+    background-color: rgb(105, 101, 101);
+}
+
+.header{
+    height: 100px;
+}
+
+.section, .main-body, .nav {
+    float : left;
+    height: 100vh;
+    background-color: rgb(201, 197, 197);
+}
+
+.nav {
+    width : 20%;
+    background-color: grey;
+}
+
+.section, .main-body{
+    width : 60%;
+}
+/*
+.my-container {
+    background-color: dimgray;
+}
+*/
+
+/* Id*/
+/*
+#id1 {
+    background-color: dimgray;
+}
+*/
+
+
+
+/* Select the list item under nav bar*/
+/* Specificity*/
+/*
+.container .nav ul li {
+    list-style-type: none;
+}
+
+.container .nav ul li:first-child {
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+*/
+
+div > .nav {
+
+}
