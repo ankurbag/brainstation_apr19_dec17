@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.container {
+  display: flex;
+  justify-content: column;
+  /*flex-direction:row-reverse;
+  justify-content: flex-end;*/
+  
+  align-items: flex-end;
+}
+
+.container__box-1 {
+  padding: 10px;
+  background-color: rgb(250, 221, 184);
+  border: 1px solid rgb(143, 141, 141);
+  flex:1;
+}
+
+.container__box-2 {
+  padding: 10px;
+  background-color: rgb(243, 180, 97);
+  border: 1px solid rgb(143, 141, 141);
+  flex:1;
+
+}
+
+.container__box-3 {
+  padding: 10px;
+  background-color: rgb(240, 138, 6);
+  border: 1px solid rgb(143, 141, 141);
+  flex:2
+
+}
