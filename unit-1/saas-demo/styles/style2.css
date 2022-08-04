@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #d0d1d0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+.card{
+  margin: auto;
+  margin-top: 25px;
+  width: 200px;
+  height: auto;
+  border: 1px solid lightgrey;
+  background-color: #ffffff;
+  padding: 5px;;
+}
+
+.card .header{
+ /* border: 1px solid lightgrey;*/
+  
+}
+
+.card .banner{
+  /* border: 1px solid lightgrey;*/
+}
+
+.card .banner img{
+  height: 100%;
+  width: 100%;
+}
+
+.card .content{
+  /* border: 1px solid lightgrey;*/
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.card .buttons {
+  margin: 10px;
+}
+
+.card .buttons .danger{
+  background-color: #f17909;
+  color: white;
+  padding: 5px 5px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.card .buttons .success{
+  background-color: #199319;
+  color: white;
+  padding: 5px 5px;
+  text-decoration: none;
+  margin: 5px;
+}
+

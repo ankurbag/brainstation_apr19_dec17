@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+.main-nav{
+  background-color: black;
+  padding: 5px;
+}
+.main-nav__list {
+  width: 90%;
+  font-size: 0;
+}
+.main-nav__item{
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 1.2rem;
+}
+
+.main-nav__link{
+  display: block;
+  text-decoration: none;
+  padding: 1.5rem;
+  color: white;
+  font-weight: 500;
+}
+
+.main-nav__link:hover{
+  text-decoration: underline;
+  padding: 1.5rem;
+  color: black;
+  background-color: gray;
+}
+
+
+
+
+

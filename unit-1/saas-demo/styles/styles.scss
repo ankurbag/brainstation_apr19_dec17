@@ -1,0 +1,59 @@
+/*
+variable
+*/
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d0d1d0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: normal;
+  }
+  
+  .card {
+    margin: auto;
+    margin-top: 20px;
+    width: 200px;
+    height: auto;
+    border: 1px solid rgb(143, 141, 141);
+    border-radius: 5px;
+  }
+  
+  .card__image {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .banner {
+    /* height: 50vh; */
+    padding: 100px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("https://picsum.photos/id/678/2000/1000");
+  
+    /* background: url("https://picsum.photos/id/678/2000/1000"); */
+    background-size: cover;
+  }
+  
+  .nav-bar {
+    margin-left: 0px;
+    padding-left: 0;
+  }
+  
+  .nav-bar__list{
+    margin-left: 0px;
+  }
+  
+  .nav-bar__item{
+    display: inline-block;
+    list-style-type: none;
+  }

@@ -1,0 +1,63 @@
+$primary-color: rgb(250, 161, 161);
+$secondary-color: rgb(201, 248, 201);
+$tertiary-color: rgb(148, 137, 241);
+$name-var: "screen and (min-width:1280px)";
+$minw: 1280px;
+@mixin desktop {
+    @media (min-width: 1280px){
+       @content;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width: 480px){
+    .container{
+        font-size: 32px;
+        flex-direction: column;
+    }
+}
+
+@media (min-width:481px) and (max-width: 640px){
+    .container{
+        font-size: 24px;
+    }
+}
+
+@media #{$minw} {
+    
+}
+
+
+
+.container{
+    min-width: 100px;
+    // max-width: 200px;
+    display: flex;
+}
+
+section{
+    width: 33%;
+    height: 400px;
+    background-color: $primary-color;
+}
+
+main{
+    width: 33%;
+    height: 400px;
+    background-color: $secondary-color;
+}
+
+aside{
+    width: 33%;
+    height: 400px;
+    background-color: $tertiary-color;
+    @include desktop{
+        position: absolute;
+        bottom: 20%;
+        left: 20%;
+    }
+}
+
+img{
+    height: auto;
+    width: 100%;
+}

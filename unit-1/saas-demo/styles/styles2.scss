@@ -1,0 +1,72 @@
+/* @import "./variable";*/ 
+@use 'variable';
+
+body {
+  background-color: $primary-color;
+  font-family: $primary-font;
+  font-weight: map-get($font-weights, regular);
+}
+
+@mixin flexcenter($direction) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-theme($light-theme: true) {
+    margin: 1rem;
+    padding: 0.5rem;
+    
+  @if $light-theme {
+    background-color: white;
+    color: black;
+  } @else {
+    background-color: black;
+    color: white;
+  }
+}
+/*
+ Nesting
+*/
+.main {
+  @include flexcenter(row);
+  &__content {
+    border-style: solid;
+    border-color: gray;
+
+    font-weight: map-get($font-weights, bold);
+  }
+
+  &__content--light {
+    @include flex-theme(true) ;
+  }
+  &__content--dark {
+    @include flex-theme(false) ;
+  }
+}
+
+/*
+    BEM & SAAS
+*/
+
+.main-nav {
+  background-color: black;
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 1.3rem;
+  }
+}

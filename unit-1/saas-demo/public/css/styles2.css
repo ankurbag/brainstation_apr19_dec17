@@ -1,0 +1,68 @@
+/*
+    variables
+*/
+/*
+    map
+*/
+body {
+  background-color: lightblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+/*
+ Nesting
+*/
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main__content {
+  border-style: solid;
+  border-color: gray;
+  font-weight: 700;
+}
+.main__content--light {
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: white;
+  color: black;
+}
+.main__content--dark {
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: black;
+  color: white;
+}
+
+/*
+    BEM & SAAS
+*/
+.main-nav {
+  background-color: black;
+}
+.main-nav__list {
+  list-style-type: none;
+}
+.main-nav__link {
+  text-decoration: none;
+  color: white;
+}
+.main-nav__link:hover {
+  text-decoration: underline;
+}
+.main-nav__item {
+  display: inline-block;
+  padding: 1.3rem;
+}/*# sourceMappingURL=styles2.css.map */

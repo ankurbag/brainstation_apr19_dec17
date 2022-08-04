@@ -1,0 +1,63 @@
+/**
+ Design Requirements III
+**/
+/**
+ Design Requirements I
+*/
+h2 {
+  font-size: 14px;
+  font-family: cursive;
+}
+
+ul {
+  background-color: beige;
+}
+
+h1 {
+  border: 4px solid teal;
+}
+
+li {
+  font-weight: bold;
+}
+
+/**
+ Design Requirements II
+**/
+.snack-list {
+  background-color: lightsalmon;
+}
+.snack-list li {
+  color: teal;
+}
+
+.cold-drink-list {
+  background-color: rgb(127, 255, 212);
+}
+
+#cold-drink-special {
+  font-weight: normal;
+  font-style: italic;
+}
+
+h1 {
+  font-family: Arial;
+}
+
+ul.hot-drink-list {
+  background-color: #DC143C;
+}
+
+.list, .cold-drink-list, .hot-drink-list, .snack-list {
+  border: thin dashed black;
+}
+
+#hot-drink-special {
+  font-weight: normal;
+  font-style: italic;
+}
+
+#snack-special {
+  font-weight: normal;
+  font-style: italic;
+}/*# sourceMappingURL=styles.css.map */

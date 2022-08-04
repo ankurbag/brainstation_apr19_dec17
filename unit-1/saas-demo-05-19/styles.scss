@@ -1,0 +1,69 @@
+/*
+ partial usage
+*/ 
+@use 'variables';
+// @import '_variables.scss' ;
+/**
+ Mixins
+**/ 
+@mixin box-properties{
+    border: 1px solid black;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+
+body{
+    background-color: variables.$primary-color;
+    font: 100% variables.$font-stack;
+}
+
+p{
+    @include box-properties;
+}
+
+div{
+    @include box-properties;
+}
+
+.message-shared{
+    border: 3px solid #ccc;
+    color: red;
+}
+
+.success{
+    @extend .message-shared;
+    border-color: green;
+}
+
+
+
+/**
+  Nesting
+**/ 
+nav{
+    ul{
+        font-family: variables.$nav-bar-font-stack;
+    }
+}
+
+a{
+    font-weight: bold;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.product{
+    width: 250px;
+    position: absolute;
+}
+
+.product__image{
+    width: 200px;
+    position: relative;
+    top: 100px;
+    left: 30px;
+}
+
