@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>HTML FORM DEMO</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">HTML Form Demo</h1>
+    </header>
+    <main class="main">
+        <!-- Input from a text field -->
+        <section class="card">
+            <!-- 
+            // Appointment Form 
+            // Personal Info 
+               // Name Phone Num Email Gender
+            
+            // Select a Doctor
+              // Select a Time
+            // Submit
+
+            // Generate a Confirmation
+              // YOur appoint ment has ben confirmed 
+              // Information 
+            -->
+            <form id="appt-form">
+                <legend>Personal Information</legend>
+                <fieldset>
+                    Name:
+                    <input type="text" name="fullname" />
+                    Phone num:
+                    <input type="tel" name="phonenum" />
+                    Email:
+                    <input type="email" name="emailaddress" />
+                </fieldset>
+
+                <legend>Appointment Information</legend>
+                <fieldset>
+                    Select a Doctor:
+                    <select name="doctor">
+                        <option value="Dr A">Dr A</option>
+                        <option value="Dr B">Dr B</option>
+                        <option value="Dr C">Dr C</option>
+                    </select>
+                    Time:
+                    <input type="datetime-local" name="appointmenttime" />
+                    
+                </fieldset>
+                <input type="submit" value="Book Appointment">
+            </form>
+        </section>
+
+        <section id="my-appointment">
+                Your Appointment:
+        </section>
+       
+    </main>
+</body>
+</html>

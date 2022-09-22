@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css">
+    <script src="js/main.js" defer></script>
+    <title>HTML FORM DEMO</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">My Class</h1>
+    </header>
+    <main class="main">
+        <!-- Input from a text field -->
+        <section class="card">
+            <form id="course-form">
+                <legend>Students</legend>
+                <fieldset>
+                    <ul id="students-list">
+                        No students
+                    </ul>
+                </fieldset>
+
+                <legend>Instructors</legend>
+                <fieldset>
+                    <ul id="instructors-list">
+                        No Instructors 
+                    </ul>
+                </fieldset>
+                <input type="button" value="Start Course" onclick="showClass()" > 
+            </form>
+        </section>
+    </main>
+</body>
+</html>

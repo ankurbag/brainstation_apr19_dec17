@@ -1,0 +1,76 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel {
+  flex-grow: 1;
+}
+.panel__title {
+  padding: 0.5rem 1rem;
+  background-color: turquoise;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px rgba(128, 128, 128, 0.5), 2px 2px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
+}
+.panel__title--primary {
+  background-color: gold;
+}
+
+.appointment-form {
+  margin: 1rem;
+}
+.appointment-form__button {
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: gold;
+  border-radius: 5px;
+  font-size: inherit;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  margin-top: 1rem;
+}
+
+.appointment {
+  background-color: lightgrey;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+label,
+input,
+select,
+textarea {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input {
+  border: 1px solid black;
+  background-color: #f9f9f9;
+  font-size: inherit;
+}
+
+input:focus {
+  outline: 4px solid gold;
+}
+
+.inline {
+  display: inline;
+}/*# sourceMappingURL=main.css.map */
+
+li{
+  list-style-type: none;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo: ES6 Classes</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+  <main class="main">
+    <h1>Demo: ES6 Classes</h1>
+    <section class="section--first">
+      <h2>Introduction to Classes</h2>
+      <h3>Prototypes & Classes</h3>
+      <p>Classes are another way of writing prototypes and constructor functions. The following two blocks are two ways
+        to write nearly identical things:</p>
+      <code>
+        function Person(name, age, height) {
+          this.name = name;
+          this.age = age;
+          this.height = height;
+        }
+        
+        Person.prototype.sayHello = function() {
+          return 'Hi my name is ' + this.name;
+        }      
+      </code>
+      <code>
+        class Person  {
+          constructor(name, age, height) {
+            this.name = name;
+            this.age = age;
+            this.height = height;
+          }
+         
+          sayHello() {
+            return 'Hi my name is ' + this.name;
+          }
+        }              
+      </code>
+      <h3>Using Classes</h3>
+      <p>You can create objects from classes using the <span class="keyword">new</span> keyword</p>
+
+    </section>
+    <section>
+      <h2>Extending Classes</h2>
+      <h3>extends keyword</h3>
+      <p>The <span class="keyword">extends</span> keyword allows us to create a new class using another as the base
+      </p>
+      <h3>constructor() method</h3>
+      <p>The <span class="keyword">constructor()</span> method runs when we use the new keyword to create an object from
+        a class.
+      </p>
+      <h3>super() method</h3>
+      <p>The <span class="keyword">super()</span> method allows us to run the parent class’ constructor function</p>
+      <p class="example-text">Example:</p>
+      <code>
+        class Student extends Person {
+          constructor(name, age, height, gpa) {
+            super(name, age, height);
+            this.gpa = gpa;
+          }
+        }
+      </code>
+    </section>
+
+    <section>
+      <h2>Classes and Scope</h2>
+      <h3>Hoisted</h3>
+      <ul>
+        <li>Function declarations</li>
+      </ul>
+      <h3>Not Hoisted</h3>
+      <ul>
+        <li>Classes</li>
+        <li>Variables</li>
+        <li>Function expressions</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Be Careful with "this"</h2>
+      <h3>The "this" keyword will always be the object that is calling the function</h3>
+      <h3>Wrap method calls in an anonymous function </h3>
+      <p class="example-text">Example:</p>
+      <code>
+        class Person {
+          constructor(name, favoriteColor, age) {
+            this.name = name;
+            this.age = age;
+            this.favoriteColor = favoriteColor;
+          }
+
+          outputName() {
+            alert(`Hello my name is ${this.name}`);
+          }
+        }
+
+        let person1 = new Person("Lebron James", 37, "Purple");
+
+        document
+          .querySelector(".btn")
+          .addEventListener("click", function(){ person1.outputName(); });
+      </code>
+      <button class="btn">Click this button to run personB.sayHello()</button>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>

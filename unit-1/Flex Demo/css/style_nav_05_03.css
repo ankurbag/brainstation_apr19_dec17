@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  border: 1px dashed gray;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+
+.main-nav{
+  background-color: black;
+  
+}
+
+.main-nav__list{
+  list-style-type: none;
+  
+}
+
+.main-nav__item{
+  display: inline-block;
+}
+
+.main-nav__link{
+  text-decoration: none;
+  color:white;
+}
+
+
+
+
+
+
+

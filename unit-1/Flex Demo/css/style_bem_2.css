@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #d0d1d0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/*
+ No BEM
+*/
+
+.card{
+    margin: auto;
+    margin-top: 20px;
+    width: 200px;
+    height: auto;
+    border: 1px solid rgb(153, 142, 142);
+    border-radius: 5px;
+    background-color: rgb(233, 230, 230);
+}
+
+.card .header{
+    font-size: 1.5rem;
+}
+
+.card .content{
+    font-size: 0.8rem;
+    text-align: justify;
+    padding: 5px;
+}
+
+.card .card-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.card .buttons{
+}
+
+.buttons a{    
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid gray;
+
+}
+
+.buttons .button-orange{
+    background-color: rgb(197, 82, 5);
+}
+
+.buttons .button-green{
+    background-color: rgba(27, 116, 49, 0.952);
+    
+}
+
+/**
+ BEM
+**/
+
+.card__title{
+    font-size: 1.5rem;
+}
+
+.card__content{
+    font-size: 0.8rem;
+    text-align: justify;
+    padding: 5px;
+}
+
+.card__image img{
+    height: 100%;
+    width: 100%;
+}
+
+.card__actions{
+}
+
+.card__actions a{    
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid gray;
+    width: 40%;
+
+}
+
+.card__actions__button--orange{
+    background-color: rgb(197, 82, 5);
+}
+
+.card__actions__button--green{
+    background-color: rgba(27, 116, 49, 0.952);
+    
+}
+

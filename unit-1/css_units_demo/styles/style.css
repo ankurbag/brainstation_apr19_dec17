@@ -1,0 +1,58 @@
+.inch-box{
+    background-color: aqua;
+    width: 1in;
+    height: 1in;
+}
+
+.pixel-box{
+    background-color: rgb(174, 174, 243);
+    width: 96px;
+    height: 96px;
+}
+
+.em-box{
+    font-size: 1.5em;
+}
+
+p, ul{
+    font-size: 1em;
+}
+
+li{
+    font-size: 0.5em;
+}
+
+.rem-box{
+    font-size: 1.5rem;
+}
+
+.rem-box p, ul{
+    font-size: 1rem;
+}
+
+.rem-box li{
+    font-size: 0.3rem;
+}
+
+.percentage-box-1{
+    background-color: aqua;
+    width: 30%;
+    float: left;
+}
+
+.percentage-box-2{
+    background-color:rgb(174, 174, 243);
+    float: left;
+}
+
+.vh-box-1{
+    background-color: rgb(214, 214, 174);
+    width: 100vh;
+    float: left;
+}
+
+.vh-box-2{
+    background-color: rgb(236, 189, 157);
+    width: 100vh;
+    float: left;
+}

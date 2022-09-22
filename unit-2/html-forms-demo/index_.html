@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="script.js" defer></script>
+    <title>Demo: HTML Forms</title>
+</head>
+<body>
+    <section class="panel">
+        <h1 class="panel__title panel__title--primary">
+            Book an Appointment
+        </h1>
+
+        <!-- Appointment Form -->
+        <form id="appointment-form" class="appointment-form" novalidate>
+            <legend>Personal Information</legend>
+            <fieldset>
+                <!-- Name input -->
+                <label for="fullName">Full Name</label>
+                <input type="text" name="fullName" id="fullName" placeholder="Jellnor Insta" required>
+
+                <!-- Email input -->
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="you@example.com">
+
+                <!-- Password input -->
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </fieldset>
+
+            <!-- Number input -->
+            <label for="numGuests">Number of Guests</label>
+            <input type="number" name="numGuests" id="numGuests" max="10" min="0">
+
+            <!-- Date input -->
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date">
+
+            <!-- Select input -->
+            <label for="visit_type">Type of Visit</label>
+            <select name="visit_type" id="visit_type">
+                <option value="doctor">Doctor</option>
+                <option value="dentist">Dentist</option>
+                <option value="office_hours">Office Hours</option>
+            </select>
+
+            <!-- Checkbox input -->
+            <input type="checkbox" name="agreement" id="agreement" class="inline">
+            <label for="agreement" class="inline">I agree to the terms</label>
+
+            <!-- Textarea -->
+            <label for="comments">Additional Comments</label>
+            <textarea name="comments" id="comments"></textarea>
+
+            <button type="submit" class="appointment-form__button">Book appointment</button>
+        </form>
+
+    </section>
+
+    <section class="panel">
+        <h2 class="panel__title">
+            My Appointments
+        </h2>
+        <div id="my-appointments">
+            <!-- Articles here -->
+        </div>
+    </section>
+</body>
+</html>

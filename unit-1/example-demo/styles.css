@@ -1,0 +1,68 @@
+header {
+    background: url("./images/books.png") center/cover no-repeat;
+}
+
+h1 {
+    color: white;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.header-container {
+    background-color: rgba(158, 49, 22, 0.6);
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main section {
+    border: 1px solid black;
+    padding-left: 20px;
+}
+
+#types-of-books {
+    background-color: papayawhip;
+}
+
+#about-us {
+    background-color: rgba(158, 49, 22, 0.6);
+}
+
+#locations {
+    background-color: papayawhip;
+}
+
+footer {
+    background: url("./images/books.png") center/cover no-repeat;
+    border: black 2px solid;
+}
+
+footer nav {
+    background-color: rgba(158, 49, 22, 0.6);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer nav ul {
+    margin-top: 0;
+}
+
+footer nav ul li {
+    list-style: none;
+    background-color: white;
+    display: inline-block;
+}
+
+footer nav ul li a {
+    /* background-color: white; */
+    text-decoration: none;
+}

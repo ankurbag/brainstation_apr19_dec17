@@ -1,0 +1,95 @@
+@charset "UTF-8";
+html,
+body,
+code {
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  font-weight: 500;
+}
+h3::before {
+  content: "✒️ ";
+  margin-right: 0.25rem;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+pre {
+  padding: 1rem;
+  width: 80%;
+  background-color: #fafafa;
+  border: 1px solid #ededed;
+  margin-left: 2rem;
+}
+
+li {
+  margin-left: 0.75rem;
+  margin-bottom: 0.25rem;
+  padding-left: 0.25rem;
+  font-weight: 300;
+}
+
+section {
+  padding: 2rem 0 2rem 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+code {
+  font-weight: 400;
+  width: 100%;
+  display: inline-block;
+  background-color: #fafafa;
+  border: 2px solid #f0f0f0;
+  margin: 1rem 0;
+  line-height: 1.4;
+  letter-spacing: 0.3px;
+  white-space: pre-wrap;
+}
+
+.main {
+  width: 80%;
+  max-width: 60rem;
+}
+
+.blockquote {
+  margin: 0;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 2px solid #e6e6e6;
+  background-color: #fafafa;
+  line-height: 1.25;
+}
+.blockquote__footer {
+  margin-top: 0.5rem;
+}
+
+section > p {
+  margin-top: -0.5rem;
+  margin-left: 2rem;
+}
+
+.description-text, .example-text {
+  font-size: 1.15rem;
+  font-style: normal;
+  margin: 2rem 0;
+}
+
+.example-text {
+  margin-bottom: -0.25rem;
+}
+
+.keyword {
+  font-weight: 600;
+}
+
+.section--first {
+  padding-top: 0.25rem;
+}

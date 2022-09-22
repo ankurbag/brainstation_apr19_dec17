@@ -1,0 +1,45 @@
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .container {
+    font-size: 32px;
+    flex-direction: column;
+  }
+}
+@media (min-width: 481px) and (max-width: 640px) {
+  .container {
+    font-size: 24px;
+  }
+}
+.container {
+  min-width: 100px;
+  display: flex;
+}
+
+section {
+  width: 33%;
+  height: 400px;
+  background-color: rgb(250, 161, 161);
+}
+
+main {
+  width: 33%;
+  height: 400px;
+  background-color: rgb(201, 248, 201);
+}
+
+aside {
+  width: 33%;
+  height: 400px;
+  background-color: rgb(148, 137, 241);
+}
+@media (min-width: 1280px) {
+  aside {
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+  }
+}
+
+img {
+  height: auto;
+  width: 100%;
+}/*# sourceMappingURL=main-2.css.map */

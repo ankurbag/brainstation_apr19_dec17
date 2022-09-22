@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 50px 100px;
+  font-family: "Roboto", sans-serif;
+}
+
+.nameList__header {
+  font-size: 2rem;
+}
+
+.nameList__title {
+  font-size: 1.5rem;
+}
+
+.nameList__names {
+  font-size: 1rem;
+}
+
+button {
+  font-size: 1.5rem;
+  background-color: darkcyan;
+  color: white;
+}

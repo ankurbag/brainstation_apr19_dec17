@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    
+</head>
+<body>
+    <section class="panel">
+        <h1 class="panel__title panel__title--primary">
+            To Do App
+        </h1>
+
+        <!-- Appointment Form -->
+        <form id="appointment-form" class="appointment-form" novalidate>
+           
+            <!-- Number input -->
+            <label for="numGuests">Task</label>
+            <input type="number" name="numGuests" id="numGuests" max="10" min="0">
+
+            <button type="submit" class="appointment-form__button">Add Task</button>
+        </form>
+
+    </section>
+    <div id="my-task">
+        <!-- Articles here -->
+        <ul>
+            <li><span style='font-size:12px;'>&#10004;</span>My Task <button>Delete<span style='font-size:12px;'>&#9940;</span></button></li>
+        </ul>
+    </div>
+</body>
+</html>

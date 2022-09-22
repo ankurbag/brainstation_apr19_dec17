@@ -1,0 +1,14 @@
+DOM : 
+ -- Tree streucture
+ -- Browser views it
+
+ -- HTML DOM API
+    -- Window
+    -- Document
+       -- Elements --> contain elements
+    -- console
+
+ -- DOM Manipulation
+    -- Selecting the Element
+    -- Apply the changes
+     -- Use HTML API methods / properties

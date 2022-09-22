@@ -1,0 +1,18 @@
+@use './variables' as *;
+
+@mixin marg-padd($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}

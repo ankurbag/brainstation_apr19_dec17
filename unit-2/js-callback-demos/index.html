@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Demo: JS Event Handling & Async</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">JS Event Handling & Async</h1>
+    </header>
+    <main class="main">
+        <!-- Basic Button -->
+        <section class="card">
+            <button class="action-button__inline" onclick="inlineClickfn()">Action Button 1</button>
+            <button class="action-button__on">Action Button 2</button>
+            <button class="action-button__event">Action Button 3</button>
+        </section>
+        
+        <!-- Input from a text field -->
+        <section class="card">
+            <input type="text" class="input-field">
+        </section>
+
+        <!-- Submitting a form -->
+        <form class="card" id="my-form">
+            <label>
+                First name:
+                <input type="text" name="firstname">
+            </label>
+            <label>
+                Last name:
+                <input type="text" name="lastname">
+            </label>
+            
+            <button type="submit">Submit</button>
+
+            <p>Your name is: <span id="my-name"></span></p>
+        </form>
+    </main>
+</body>
+</html>
