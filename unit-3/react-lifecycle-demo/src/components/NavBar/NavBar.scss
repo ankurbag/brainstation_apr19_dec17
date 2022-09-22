@@ -1,0 +1,20 @@
+@use '../../partials/variables' as *;
+
+.NavBar {
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  &__Link {
+    color: $primary-color;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.625rem;
+    &--active {
+      border-bottom: 1px solid $primary-color;
+    }
+  }
+}

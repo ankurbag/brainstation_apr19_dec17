@@ -1,0 +1,9 @@
+.Item {
+  padding: 0.625rem;
+  &__title {
+    font-weight: normal;
+  }
+  &__avatar {
+    border-radius: 50%;
+  }
+}

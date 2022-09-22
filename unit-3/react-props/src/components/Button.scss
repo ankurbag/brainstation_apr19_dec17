@@ -1,0 +1,11 @@
+@use '../partials/variables' as *;
+
+.Btn {
+  background: $primary-color;
+  &--small {
+    font-size: 0.5rem;
+  }
+  &--large {
+    font-size: 2rem;
+  }
+}

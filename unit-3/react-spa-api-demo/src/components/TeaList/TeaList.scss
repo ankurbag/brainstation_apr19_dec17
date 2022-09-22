@@ -1,0 +1,23 @@
+@use '../../partials/variables' as *;
+
+.TeaList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  &__item {
+  }
+  &__Link {
+    display: block;
+    text-decoration: none;
+    color: darken($olive-green, 10%);
+    background: darken($light-green, 3%);
+
+    &:hover {
+      background: darken($light-green, 6%);
+      color: darken($olive-green, 20%);
+    }
+  }
+}

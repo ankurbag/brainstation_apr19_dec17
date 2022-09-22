@@ -1,0 +1,19 @@
+.nav__header{
+    height: 50px;
+    border-bottom: 1px solid black;
+    list-style-type: none;
+}
+
+.nav__title{
+    float: left;
+    padding: 10px;
+    
+}
+
+.nav__link {
+    text-decoration: underline;
+}
+
+.nav__link--active {
+    text-decoration: none;
+}

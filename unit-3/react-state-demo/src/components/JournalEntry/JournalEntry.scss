@@ -1,0 +1,16 @@
+.journal-entry {
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    &__title {
+        margin-top: 0;
+    }
+
+    &__btn {
+        cursor: pointer;
+        display: block;
+        margin-top: 0.5rem;
+    }
+}

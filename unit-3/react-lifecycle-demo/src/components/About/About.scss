@@ -1,0 +1,10 @@
+@use '../../partials/variables' as *;
+
+.About {
+  &__title {
+  }
+  &__description {
+    background: $secondary-color;
+    padding: 1rem;
+  }
+}
